@@ -1,0 +1,641 @@
+*{
+  font-size: 1rem;
+}
+.table{
+  width: 20rem;
+  margin-left: 2rem;
+}
+
+.table h3{
+  font-size: 1.4rem;
+  padding-left: 2rem;
+}
+
+.cln_dtl{
+  background-color: #f3f3f3;
+  margin-left: 2rem;
+  width: 105rem;
+}
+
+.cln_dtl h3{
+  font-size: 1.2rem;
+}
+
+.text_area_cln{
+  width: 93rem;
+  height: 20vh;
+}
+.clinic{
+  background-color: #fff;
+  padding-right: 1rem;
+}
+
+.clinic{
+  display: flex;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  width: 93rem;
+}
+.cln_sign{
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
+.cln_sign h4{
+  font-size: 1.2rem;
+}
+.inp_val{
+  
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+  padding: 10px;
+
+}
+.inp_val h2{
+  font-weight: 500;
+  font-size: 1.3rem;
+  background-color: #e3e3e3;
+  padding: 0.5rem;
+  margin-right: 1rem;
+}
+
+.chk_val{
+  border: 1px solid red;
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px */
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+:root {
+  --primary-color: #000839;
+  --primary-shades: #00020b;
+  --para-color: #80849c;
+  --helper-color: #1264fa;
+  --white: #fff;
+  --bg-color: #e6e6e6;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+}
+
+img {
+  display: inline-block;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--primary-color);
+}
+
+.para {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  font-weight: 400;
+  color: var(--para-color);
+}
+
+/*--------------------------------
+ header and navbar style start 
+ <!-- subscribe to thapa technical Channle plz 
+ link:https://www.youtube.com/thapatechnical -->
+------------------------- */
+.header {
+  height: 8.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5.4rem;
+  position: relative;
+  background-color: rgb(249 249 255);;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.2rem;
+  font-size: 1.5rem;
+}
+
+.navbar-list .navbar-btn {
+  padding: 1.2rem 2.4rem;
+  background-color: var(--white);
+  border: 1px solid var(--helper-color);
+  color: var(--helper-color);
+  border-radius: 5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-list .navbar-link:hover,
+.navbar-list .navbar-link:active {
+  color: var(--helper-color);
+}
+
+.navbar-btn:hover,
+.navbar-btn:active {
+  background-color: var(--helper-color);
+  color: var(--white);
+}
+
+.navbar-link {
+  text-transform: uppercase;
+}
+
+.mobile-nav-icon {
+  font-size: 4rem;
+  color: var(--primary-color);
+}
+
+.mobile-navbar-btn {
+  display: none;
+}
+
+.mobile-nav-icon[name="close"] {
+  display: none;
+}
+
+/* resuable code  */
+.section {
+  padding: 9.6rem 0;
+}
+
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid-two-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.btn {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  padding: 1.6rem 3.2rem;
+  border-radius: 10rem;
+  background-color: var(--helper-color);
+  color: var(--white);
+  transition: all 0.2s linear;
+}
+
+.btn:hover,
+.btn:active {
+  transform: scale(1.05);
+}
+
+/*--------------------------------
+ dct section style start 
+ <!-- subscribe to thapa technical Channle plz 
+ link:https://www.youtube.com/thapatechnical -->
+------------------------- */
+
+.section-dct {
+  position: relative;
+}
+
+.section-dct::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 9.6rem;
+  right: 0;
+  width: 30%;
+  height: 50%;
+  background: var(--bg-color);
+  z-index: -1;
+}
+
+.primary-heading {
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+.section-dct .para {
+  margin-top: 2rem;
+  margin-bottom: 3.2rem;
+}
+
+.dct-icons {
+  margin-top: 4.2rem;
+}
+
+.dct-icons .icon {
+  font-size: 6rem;
+  position: relative;
+}
+
+.dct-icons .icon::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 60%;
+  background-color: var(--helper-color);
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.dct-icons h2 {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.section-dct .dct-icon-style .para {
+  line-height: 1.6;
+  font-family: 1.4rem;
+  margin: 0;
+}
+
+.dct-image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+
+.dct-image img {
+  height: 60%;
+  box-shadow: 0 0 10rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.dct-img-overlay {
+  position: absolute;
+  bottom: 0;
+  left: -15%;
+  background-color: var(--primary-color);
+  padding: 3rem;
+}
+
+.dct-img-overlay .para {
+  color: var(--white);
+}
+
+.dct-img-overlay .para:nth-child(2) {
+  margin: 0;
+  font-weight: bold;
+}
+
+.dct-img-overlay .para:last-child {
+  margin: 0;
+}
+
+/*--------------------------------
+  media queries style start 
+  <!-- subscribe to thapa technical Channle plz 
+ link:https://www.youtube.com/thapatechnical -->
+------------------------- */
+
+@media (max-width: 1250px) {
+  .container {
+    padding: 0 6rem;
+  }
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 980px) {
+  .container {
+    max-width: 96rem;
+  }
+
+  .section-dct .grid-two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .section-dct .dct-icons .grid-two-column {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translateX(100%);
+    transition: all 0.3s linear;
+
+    opacity: 1;
+    visibility: visible;
+    pointer-events: none;
+  }
+
+  .navbar .navbar-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar .navbar-link {
+    color: var(--white);
+  }
+
+  .mobile-navbar-btn {
+    display: block;
+    z-index: 9999;
+  }
+
+  .active .navbar {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0);
+    z-index: 999;
+  }
+
+  .active .mobile-navbar-btn .mobile-nav-icon[name="close"] {
+    display: block;
+    color: var(--white);
+  }
+  .active .mobile-navbar-btn .mobile-nav-icon[name="menu"] {
+    display: none;
+    color: var(--white);
+  }
+
+  .section::before {
+    height: 30%;
+  }
+
+  .dct-image img {
+    width: 60%;
+  }
+
+  .dct-image .dct-img-overlay {
+    width: 80%;
+    left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .dct-image img {
+    width: 80%;
+  }
+  .dct-image .dct-img-overlay {
+    width: 90%;
+    left: 0;
+  }
+}
+
+@media (max-width: 545px){
+  .dct-image{
+    margin-top: 24rem;
+  }
+}
+
+
+/* <=========
+============= FOOTER ++++++++++++++++++==
+=========> */
+/* ===========================================
+Footer Section Start
+======================================= */
+
+.section-footer {
+  background: var(--heading);
+  transition: all 0.7s linear;
+  font-size: 1.6rem;
+}
+
+.grid-four-column{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.section-footer h3 {
+  color: var(--primary-color);
+  margin-bottom: 3rem;  
+  /* margin-left: 2rem; */
+}
+
+.f-about{
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.f-about p {
+  color: #adadad;
+  /* margin-left: 2rem; */
+}
+
+.f-links ul,
+.f-services ul,
+.f-address address {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.f-links li,
+.f-links a,
+.f-services li,
+.f-services a {
+  font-size: 1.4rem;
+  color: #adadad;
+  text-transform: capitalize;
+  text-decoration: none;
+  list-style: none;
+}
+
+.f-links span,
+.f-services span,
+.f-address span {
+  margin-right: 1rem;
+}
+
+.f-address p,
+.f-address p a {
+  font-style: normal;
+  color: #adadad;
+}
+
+.f-social-icons {
+  margin: 5rem 0;
+  text-align: center;
+  color: #adadad;
+}
+
+.f-social-icons .icons {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--icons-bg);
+  display: inline-block;
+  padding: 1.4rem 1.8rem;
+  position: relative;
+  color: var(--white);
+  animation: water-wave 3s linear infinite;
+  cursor: pointer;
+}
+
+.f-credits p {
+  text-align: center;
+  color: #adadad;
+}
+
+.footer a:hover,
+.footer a:active {
+  color: var(--white);
+}
+
+
+/* ===========
+=======================
+================= */
+
+.data_home{
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5rem;
+  margin-left: 5rem;
+  background-color: #e6e6e6;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+.data_home_left, .home_app_left{
+  font-size: 2rem;
+  padding-top: 6rem;
+  padding-left: 9rem;
+}
+
+.data_home_left h1, .home_record_right h1{
+  font-weight: 400;
+}
+
+.data_home_left span, .home_record_right span{
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+}
+
+.data_home_left ul, .data_home_left li{
+  margin-top: 4rem;
+  list-style:square;
+  padding-left: 3rem;
+}
+
+.home_record{
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5rem;
+  margin-left: 15rem;
+  padding: 2rem;
+  /* margin-bottom: 1rem; */
+}
+ 
+.home_record_right ul, .home_record_right li{
+  margin-top: 4rem;
+  list-style:circle;
+  padding-right: 0.8rem;
+}
+.home_record_right{
+  font-size: 2rem;
+  padding-right: 10rem;
+}
+
+.home_app{
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 5rem;
+  padding-left: 5rem;
+  background-color: #e1e0e2;
+  padding: 2rem;
+  /* margin-bottom: 1rem; */
+}
+
+.image_app{
+  height: 60vh;
+  background-size: cover;
+  padding: 1rem;
+}
+
+.home_app_left p{
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.home_app_left h2{
+  font-size:3rem;
+  font-weight: 500;
+  margin-top: 4rem;
+}
+
+.app_inp{
+  margin-top: 3rem;
+  margin-left: 4rem;
+}
+
+.home_app_inp{
+  font-size: 1.8rem;
+  padding: 0.5rem;
+  width: 30rem;
+  border-radius:1.4rem;
+}
+
+.home_app_btn{
+  padding: 1rem;
+  margin-left: 1.5rem;
+  border-radius:1.2rem;
+  background-color: var(--primary-color);
+  color: #fff;
+}
